@@ -1,0 +1,19 @@
+{
+  "name": "say-hello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pivee/Say-Hello.git"
+  },
+  "author": "Pivithuru Jayakody",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pivee/Say-Hello/issues"
+  },
+  "homepage": "https://github.com/Pivee/Say-Hello#readme"
+}
