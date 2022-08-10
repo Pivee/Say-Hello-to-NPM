@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pivee/Say-Hello.git"
+    "url": "git+https://github.com/Pivee/Say-Hello-to-NPM.git"
   },
   "author": "Pivithuru Jayakody",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Pivee/Say-Hello/issues"
+    "url": "https://github.com/Pivee/Say-Hello-to-NPM/issues"
   },
-  "homepage": "https://github.com/Pivee/Say-Hello#readme",
+  "homepage": "https://github.com/Pivee/Say-Hello-to-NPM#readme",
   "devDependencies": {
     "typescript": "^4.7.4"
   }
