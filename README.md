@@ -2,7 +2,9 @@
 
 This repository aims to provide a simple guide into how you can create and use your own NPM packages using Typescript.
 
-> Step 1: Setup your workspace to have the following directories: `package`, `package/src` and `test`.
+## Development Process
+
+### Step 1: Setup your workspace to have the following directories: `package`, `package/src` and `test`.
 
 ```files
 ├───package
@@ -10,14 +12,14 @@ This repository aims to provide a simple guide into how you can create and use y
 └───test
 ```
 
-> Step 2: Create `.gitignore` file in the root of your project to exclude the following from Git commits:
+### Step 2: Create `.gitignore` file in the root of your project to exclude the following from Git commits:
 
 ```.gitignore
 /**/node_modules
 /**/dist
 ```
 
-> Step 3: Create `tsconfig.json` file in the root of your project and set the following options:
+### Step 3: Create `tsconfig.json` file in the root of your project and set the following options:
 
 ```json
 {
@@ -36,7 +38,7 @@ This repository aims to provide a simple guide into how you can create and use y
 }
 ```
 
-> Step 4: Create `package.json` and `npm init` inside `/package`.
+### Step 4: Create `package.json` and `npm init` inside `/package`.
 
 ```files
 │   .gitignore
@@ -53,7 +55,7 @@ This repository aims to provide a simple guide into how you can create and use y
 
 _Make sure to provide the name of the package to suit the name you need to use for installation. You might need to decide whether it needs to be a scoped pacakge (e.g. `@nestjs/core`). [Read more...](https://docs.npmjs.com/about-scopes)_
 
-> Step 5: Create `build` script inside `package.json`.
+### Step 5: Create `build` script inside `package.json`.
 
 ```jsonc
 > package.json
@@ -67,7 +69,7 @@ _Make sure to provide the name of the package to suit the name you need to use f
 }
 ```
 
-> Step 6: Create your source files inside `package/src`.
+### Step 6: Create your source files inside `package/src`.
 
 _Using `index.ts` as a barrel file to handle youe exports will make things easier for you when you're trying to use the package later -- your choice._
 
@@ -101,7 +103,7 @@ export function sayHello(name = "World") {
 export * from './sayHello';
 ```
 
-> Step 7: Build your package using `npm run build` and try `npm link` to make it available on your local machine.
+### Step 7: Build your package using `npm run build` and try `npm link` to make it available on your local machine.
 
 _Now you can use the NPM package you just built by creating a new directory and using `npm link { Name of your package }` inside it. You just need to import the package in the source code._
 
