@@ -1,11 +1,13 @@
 {
   "name": "@pivee/say-hello",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index",
   "typings": "dist/index",
   "scripts": {
+    "prebuild": "rimraf dist",
     "build": "tsc",
+    "prepare": "npm run build",
     "test": "jest -w"
   },
   "repository": {
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/Pivee/Say-Hello-to-NPM#readme",
   "devDependencies": {
+    "rimraf": "^3.0.2",
     "typescript": "^4.7.4"
   }
 }
