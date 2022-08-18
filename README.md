@@ -12,6 +12,28 @@ This repository aims to provide a simple guide into how you can create and use y
 └───test
 ```
 
+Make sure to add the following inside `package.json`:
+
+```jsonc
+> package.json
+
+...
+  "main": "dist/index",
+  "typings": "dist/index",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest -w"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
+  },
+...
+```
+
+
 ### Step 2: Create `.gitignore` file in the root of your project to exclude the following from Git commits:
 
 ```.gitignore
